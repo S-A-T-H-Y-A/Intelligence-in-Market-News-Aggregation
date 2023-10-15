@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 4px;
+  font-size: 20px;
+  text-align: center;
+  background: #ddd;
+}
+.trend {
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 49%;
+}
+
+
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 49%;
+}
+
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+</style>
+<meta http-equiv="refresh" content="300">
+</head>
+<body>
+
+<div style="background-color: white;" class="header">
+  <h2>Market News</h2>
+</div><br>
+
+
+<div class="trend">
+{% for item in words %}
+    <a href="javascript:clickhandle('{{item}}');">{{item}}</a>&nbsp&nbsp&nbsp&nbsp  
+{% endfor %}
+</div>
+
+<div id="content">
+{% for n in range(0,news|length,2) %}
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      {% set item1=news[n] %}
+      <h2><a href="{{item1[3]}}" target="_blank">{{item1[1]}}</a></h2>
+      <h5>Published Date:  &nbsp&nbsp{{item1[4]}}</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>{{item1[2]}}</b></p><br>
+      <p><b>{{item1[0]}}</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    {% set item2=news[n+1] %}
+      <h2><a href="{{item2[3]}}" target="_blank">{{item2[1]}}</a></h2>
+      <h5>Published Date:  &nbsp&nbsp{{item2[4]}}</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>{{item2[2]}}</b></p><br>
+      <p><b>{{item2[0]}}</p>
+    </div>
+ </div>
+</div>
+{% endfor %}
+</div>
+<!--
+<div class="footer">    
+  <h2>Powered By Rablion Softwares</h2>
+</div>-->
+
+</body>
+<script>
+
+function clickhandle(name){
+var ele=document.getElementById("content");
+let xmlhttp= window.XMLHttpRequest ?
+        new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200)
+            
+            ele.innerHTML=this.responseText;
+    }
+
+    xmlhttp.open("GET","/"+name, true);
+
+    xmlhttp.send();
+return false;
+} 
+ 
+</script>
+</html>
+	

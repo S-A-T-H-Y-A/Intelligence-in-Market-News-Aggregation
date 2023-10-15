@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 4px;
+  font-size: 20px;
+  text-align: center;
+  background: #ddd;
+}
+.trend {
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 49%;
+}
+
+
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 49%;
+}
+
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+</style>
+<meta http-equiv="refresh" content="300">
+</head>
+<body>
+
+<div style="background-color: white;" class="header">
+  <h2>Market News</h2>
+</div><br>
+
+
+<div class="trend">
+
+    <a href="javascript:clickhandle('ipo');">ipo</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('bank');">bank</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('global');">global</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('china');">china</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('top');">top</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('covid');">covid</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('points');">points</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('hit');">hit</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('canara');">canara</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('near');">near</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('vaccine');">vaccine</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('asia');">asia</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('tech');">tech</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('new');">new</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('trade');">trade</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('biden');">biden</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('today');">today</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('banks');">banks</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('news');">news</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('metals');">metals</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('asian');">asian</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('highs');">highs</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('hopes');">hopes</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('bond');">bond</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('icici');">icici</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('returns');">returns</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('buys');">buys</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('know');">know</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('times');">times</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('hits');">hits</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('ahead');">ahead</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('dollar');">dollar</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('tata');">tata</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('capital');">capital</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('sebi');">sebi</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('report');">report</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('coronavirus');">coronavirus</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('financial');">financial</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('policy');">policy</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('raise');">raise</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('falls');">falls</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('updates');">updates</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('next');">next</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('rise');">rise</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('rbi');">rbi</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('optimism');">optimism</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('trump');">trump</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('gain');">gain</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('singapore');">singapore</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('hold');">hold</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('plan');">plan</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('opening');">opening</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('reliance');">reliance</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('bharat');">bharat</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('firm');">firm</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('stimulus');">stimulus</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('growth');">growth</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('wall');">wall</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('bell');">bell</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('franklin');">franklin</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('indian');">indian</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('sell');">sell</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('boost');">boost</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('industries');">industries</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('rate');">rate</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('see');">see</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('jumps');">jumps</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('things');">things</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('focus');">focus</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('need');">need</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('setup');">setup</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('rubber');">rubber</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('fiscal');">fiscal</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('bandh');">bandh</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('security');">security</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('buying');">buying</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('police');">police</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('edelweiss');">edelweiss</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('delhi');">delhi</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('daily');">daily</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('continue');">continue</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('economic');">economic</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('surge');">surge</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('hong');">hong</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('wrap');">wrap</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('chemicals');">chemicals</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('white');">white</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('live');">live</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('pharma');">pharma</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('jet');">jet</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('fresh');">fresh</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('brexit');">brexit</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('nse');">nse</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('airways');">airways</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('direct');">direct</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('google');">google</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('strong');">strong</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('talks');">talks</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('biggest');">biggest</a>&nbsp&nbsp&nbsp&nbsp  
+
+    <a href="javascript:clickhandle('months');">months</a>&nbsp&nbsp&nbsp&nbsp  
+
+</div>
+
+<div id="content">
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.thehindubusinessline.com/markets/stock-markets/amcs-target-to-add-50000-new-mf-distributors-in-next-3-years/article34082971.ece" target="_blank">AMCs target to add 50,000 new MF distributors in next 3 years</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:41:57</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>
+                Seven MFs, NSE, CIEL join hands for education platform
+            </b></p><br>
+      <p><b>Hindubusiness</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.business-standard.com/article/markets/godrej-properties-raises-rs-3-750-crore-through-qip-issue-121031600626_1.html" target="_blank">Godrej Properties raises Rs 3,750 crore through QIP issue</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:41:00</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>Realty firm Godrej Properties on Tuesday said it has raised Rs 3,750 crore through sale of shares to institutional investors.</b></p><br>
+      <p><b>BusinessStandard</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/business/will-white-house-backing-hoist-biological-e-tobig-leaguecovid-19-vaccine-makers_14939481.html" target="_blank">Will White House backing hoist Biological E to the big league of COVID-19 vaccine makers?</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:35:53</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> After being overshadowed by the Serum Institute of India and Bharat BioTech, Indiaâs first private vaccine maker has sprung into action with US funding that will help it produce 1 billion doses of COVID-19 vaccines by the end of next year.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/politics/interview-|-adhocism-attop-detrimental-tocongress-says-pc-chacko_14939441.html" target="_blank">Interview | Adhocism at the top detrimental to the Congress, says PC Chacko</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:32:30</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> PC Chacko, who sent his resignation letter to Congress president Sonia Gandhi and former party president Rahul Gandhi, alleged that the seats in his home state were divided on the basis of factions and blamed the central leadership for failing to lead the party effectively.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/business/silver-futures-slip-051-to-rs-67324-per-kgfirm-dollar_14939461.html" target="_blank">Silver futures slip 0.51% to Rs 67,324 per kg on firm dollar</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:32:23</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> The semi-precious metal has been trading higher than 100 and 200 daysâ moving averages but lower than 50, 20 and 5 daysâ moving averages on the daily chart. The Relative Strength Index (RSI) is at 48.88 which indicates neutral momentum in prices.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.livemint.com/market/stock-market-news/exxaro-tiles-files-drhp-for-ipo-11615887462519.html" target="_blank">Exxaro Tiles files DRHP for IPO</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:24:55</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>The company may, in consultation with the book running lead manager, consider a pre-IPO placement of up to 2.2 million equity shares for cash consideration</b></p><br>
+      <p><b>LiveMint</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.business-standard.com/article/markets/suryoday-sfb-ipo-elicits-mixed-reaction-from-analysts-here-s-why-121031600623_1.html" target="_blank">Suryoday SFB IPO elicits mixed reaction from analysts; here&#39;s why</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:21:00</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>Analysts covering the Suryoday SFB IPO share mixed views and are split between high valuations and good return ratios</b></p><br>
+      <p><b>BusinessStandard</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://economictimes.indiatimes.com/markets/stocks/news/kalyan-jewellers-ipo-proceeds-to-fund-working-capital-tk-ramesh/videoshow/81529783.cms" target="_blank">Kalyan Jewellers IPO proceeds to fund working capital: TK Ramesh</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:20:09</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b></b></p><br>
+      <p><b>EconomicTimes</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.thehindubusinessline.com/markets/brokers-call-buy-canara-bank/article34082794.ece" target="_blank">Broker’s Call: Buy Canara Bank</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:19:41</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>
+                LKP SecuritiesTarget: ₹210CMP: ₹158.30In Q3FY21, the bank reported a strong result with a PAT of ₹700 crore owing to treasury gains (other income grew
+            </b></p><br>
+      <p><b>Hindubusiness</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/business/svkm39s-nm-collegecommerceeconomics-presents-insight3921_14939381.html" target="_blank">SVKM#39;s NM College of Commerce and Economics presents Insight#39;21</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:08:09</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Insight#39;21 is a four-day business, finance and economic inter-collegiate festival based on the theme &#34;Unravelling the Digital Era&#34;</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.livemint.com/market/ipo/nazara-technologies-ipo-grey-market-premium-rakesh-jhunjhunwala-stake-other-details-11615879695956.html" target="_blank">Nazara Technologies IPO: Grey market premium, other details in 10 points</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:00:26</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>Ace investor Rakesh Jhunjhunwala holds more than 10% stake in Nazara Technologies</b></p><br>
+      <p><b>LiveMint</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/business/placements-under-national-urban-livelihoods-mission-drop-90-percentfy21_14939321.html" target="_blank">Placements under National Urban Livelihoods Mission drop 90 percent in FY21</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   15:00:12</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Only 7,141 people found gainful employment in the urban areas in FY21 as of December 31, 2020, as compared to 71,503 persons in FY20.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/recommendations/buy-action-construction-equipment-targetrs-215-icici-direct_14939301.html" target="_blank">Buy Action Construction Equipment; target of Rs 215: ICICI Direct</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:55:29</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> ICICI Direct is bullish on Action Construction Equipment recommended buy rating on the stock with a target price of Rs 215 in its research report dated March 15, 2021.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/economy/solar-tariff-could-riseto-40-45punit-over-customs-duty-change_14939281.html" target="_blank">Solar tariff could rise up to 40-45p/unit over customs duty change</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:53:06</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> The Ministry of New and Renewable Energy#39;s (MNRE) announcement of the BCD implementation on imported solar cells (25 per cent) and modules (40 per cent) starting April 1 could increase the solar power tariff, it said.</b></p><br>
+      <p><b>MoneyControl-Economy</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/recommendations/buy-cg-consumer-electricals-targetrs-500-dolat-capital-market_14939241.html" target="_blank">Buy CG Consumer Electricals; target of Rs 500: Dolat Capital Market</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:48:47</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Dolat Capital Market is bullish on CG Consumer Electricals has recommended buy rating on the stock with a target price of Rs 500 in its research report dated March 15, 2021.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/recommendations/buy-kei-industries-targetrs-580-dolat-capital-market_14939221.html" target="_blank">Buy KEI Industries; target of Rs 580: Dolat Capital Market</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:47:16</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Dolat Capital Market is bullish on KEI Industries has recommended buy rating on the stock with a target price of Rs 580 in its research report dated March 15, 2021.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/politics/frustrated-over-39poor39-turnoutpoll-rallies-amit-shah-hatching-conspiracy-to-kill-me-mamata-banerjee_14939341.html" target="_blank">Frustrated over #39;poor#39; turnout in poll rallies, Amit Shah hatching conspiracy to kill me: Mamata Banerjee</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:43:55</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Claiming that Shah is getting &#34;frustrated&#34; by &#34;poor turnou&#34; at his rallies, Banerjee also alleged that the BJP is plotting conspiracies to kill her as her security director Vivek Sahay was removed by the Election Commission after she sustained injuries last week in Purba Medinipur#39;s Nandigram.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://economictimes.indiatimes.com/markets/stocks/news/energy-financial-stocks-pick-of-choice-for-fiis-materials-remain-out-of-favour/articleshow/81528785.cms" target="_blank">Energy, financial stocks pick of choice for FIIs; materials remain out of favour</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:42:22</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>A BofA Securities analyst said foreign institutional investors have piled on shares of financial and energy stocks in February, hoping for a better earnings performance as the economy improves.</b></p><br>
+      <p><b>EconomicTimes</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/business/super-plastronics-to-invest-rs-300-cr-to-strengthen-its-capabilitiesiot-technologies_14939201.html" target="_blank">Super Plastronics to invest Rs 300 cr to strengthen its capabilities in IoT technologies</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:40:41</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Phased over three years, the investment will focus on building intelligent TVs that are intuitive and meet the demands of the ânew Indian customerâ, the Noida-based company said in a statement.</b></p><br>
+      <p><b>MoneyControl-Business</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/business/liberty-steel-shuts-india-plants-for-39scheduled-maintenance39_14939181.html" target="_blank">Liberty Steel shuts India plants for #39;scheduled maintenance#39;</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:37:04</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> The move comes even as the company, facing a financial crunch after its lead bank filed for insolvency, cuts production in some of its plants in the UK. In India, Liberty Steel has presence through Adhunik Metaliks and Zion Steel.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/current-affairs/pandemic-influenced-84ultra-wealthy-indians-to-reassess-succession-planning-survey_14939161.html" target="_blank">Pandemic influenced 84% of ultra-wealthy Indians to reassess succession planning: Survey</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:34:19</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> The survey was based on responses from more than 600 private bankers, wealth advisors and family offices representing a combined wealth of more than USD 3.3 trillion.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/business/top-5-steelmakers-seen-lowering-debt-by-rs-35000-crore-this-yearnext-report_14939101.html" target="_blank">Top 5 steelmakers seen lowering debt by Rs 35,000 crore this year and next: Report</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:25:19</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Rising demand and higher prices will boost their operating margins by 23 per cent next fiscal, though down from 25 per cent this fiscal, leading to improved credit metrics for steelmakers, Crisil said in its report.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.thehindubusinessline.com/markets/stock-markets/sensex-up-213-points-intraday/article34082073.ece" target="_blank">Sensex up 213 points intraday</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:19:14</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>
+                Nifty 50 rises 52 points; IT stocks steal the show
+            </b></p><br>
+      <p><b>Hindubusiness</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://economictimes.indiatimes.com/markets/stocks/news/stock-market-update-nifty-pharma-index-flat-dr-reddys-lab-climbs-nearly-3/articleshow/81528832.cms" target="_blank">Stock market update: Nifty Pharma index flat; Dr Reddy&#39;s Lab climbs nearly 3%</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:18:29</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>The index was trading 0.02 per cent up at 12026.9.</b></p><br>
+      <p><b>EconomicTimes</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/world-news/apac-nottrack-to-achieve-sdg-goals-by-2030-may-realise-10target-un-report_14939081.html" target="_blank">APAC not on track to achieve SDG goals by 2030; may realise 10% of target: UN report</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:17:41</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> As many as 829 million workers employed in the informal sector were impacted in April 2020 due to the pandemic-induced lockdown, the report noted.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/mutual-funds/what-top-three-domestic-mutual-funds-boughtsoldfebruary_14939061.html" target="_blank">What top three domestic mutual funds bought and sold in February</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:14:33</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> We take a look at SBI MF, HDFC MF and ICICI Pru MF. The MF industryâs AUM increased 3.7 percent MoM (Rs 1.1 lakh cr) to Rs 31.6 lakh cr in Feb 2021. Investors have capitalised on the market rally to book profits and rebalance portfolio as markets continue to hit new highs, said a brokerage firm.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.livemint.com/market/stock-market-news/investing-in-bonds-has-become-stupid-ray-dalio-here-s-what-he-recommends-11615882751172.html" target="_blank">Investing in bonds has become &#39;stupid&#39;: Ray Dalio. Here&#39;s what he recommends</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:11:52</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>Ray Dalio has long been known for his disdain of holding cash amid rising money printing and inflation, but the billionaire investor now says bonds may be a bad bet as well -- or any-US dollar-denominated asset for that matter.</b></p><br>
+      <p><b>LiveMint</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://economictimes.indiatimes.com/markets/stocks/news/stock-market-update-smallcap-stocks-rise-zensar-tech-skyrockets-over-16/articleshow/81528693.cms" target="_blank">Stock market update: SmallCap stocks rise; Zensar Tech skyrockets over 16%</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:05:38</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>The S&amp;P BSE SmallCap index was trading 0.3 per cent up at 21158.91.</b></p><br>
+      <p><b>EconomicTimes</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/economy/exclusive-|-centre-may-give-unchanged-inflation-targets-to-rbiâs-monetary-policy-committee_14939021.html" target="_blank">Exclusive | Centre may give unchanged inflation targets to RBIâs Monetary Policy Committee</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:05:15</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> It is learnt that the RBI and the finance ministry are on the same page regarding keeping the targets unchanged. In fact, in late February, the RBI said in a report that it favours keeping the current inflation targeting regime unchanged, saying it has been effective in containing price-growth.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://economictimes.indiatimes.com/markets/stocks/news/amcs-nse-join-hands-to-nearly-double-mf-distributors-in-next-3-years/articleshow/81528368.cms" target="_blank">AMCs, NSE join hands to nearly double MF distributors in next 3 years</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   14:02:11</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>Mutual fund distribution is grossly under-penetrated in India with one mutual fund distributor for every 17,000 potential investors, highlighting the low interest among individuals.</b></p><br>
+      <p><b>EconomicTimes</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://timesofindia.indiatimes.com/business/international-business/china-to-issue-visas-to-foreigners-who-have-taken-chinese-jab/articleshow/81528310.cms" target="_blank">China to issue visas to foreigners who take their jab</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:55:17</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>China is poised to ease border restrictions to allow some foreigners -- including from the US, India and Pakistan -- back in, provided they have taken a Chinese-made Covid-19 vaccine. The country has been closed to most foreigners since last March to stem the spread of coronavirus.</b></p><br>
+      <p><b>TimesofIndia</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/ipo-issues-open/anupam-rasayan-ipo-final-day-issue-subscribed-765-times-qib-portion-booked-726-times_14938961.html" target="_blank">Anupam Rasayan IPO final day: Issue subscribed 7.65 times, QIB portion booked 7.26 times</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:51:37</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Anupam Rasayan IPO is fully a fresh issue and the net proceeds will be utilised for repayment of debt</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/ipo-issues-open/anupam-rasayan-ipo-final-day-issue-subscribed-1180-times-qib-portion-booked-841-times_14938961.html" target="_blank">Anupam Rasayan IPO final day: Issue subscribed 11.80 times, QIB portion booked 8.41 times</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:51:37</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Anupam Rasayan IPO is fully a fresh issue and the net proceeds will be utilised for repayment of debt</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/current-affairs/gujarat-night-curfewahmedabad-vadodara-suratrajkot-to-continue-till-march-31_14938821.html" target="_blank">Gujarat: Night curfew in Ahmedabad, Vadodara, Surat and Rajkot to continue till March 31</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:35:38</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> The night curfew will begin from March 17 and will be in place between 10 pm and 6 am.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/ipo-issues-open/craftsman-automation-ipo-subscribed-93-retail-portion-booked-149-timesday-2_14938841.html" target="_blank">Craftsman Automation IPO subscribed 93%, retail portion booked 1.49 times on day 2</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:35:06</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Craftsman Automation IPO consists of a fresh issue of Rs 150 crore and an offer for sale of 45,21,450 shares by existing shareholders</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/ipo-issues-open/craftsman-automation-ipo-subscribed-71-retail-portion-fully-bookedday-2_14938841.html" target="_blank">Craftsman Automation IPO subscribed 71%, retail portion fully booked on day 2</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:35:06</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Craftsman Automation IPO consists of a fresh issue of Rs 150 crore and an offer for sale of 45,21,450 shares by existing shareholders</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://economictimes.indiatimes.com/markets/stocks/news/stock-market-update-midcap-stocks-gain-the-new-india-assurance-jumps-6/articleshow/81528522.cms" target="_blank">Stock market update: MidCap stocks gain; The New India Assurance jumps 6%</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:34:17</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>The S&amp;P BSE Midcap index was trading 0.4 per cent up at 20511.03.</b></p><br>
+      <p><b>EconomicTimes</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/world-news/nokia-to-cutto-10000-jobs-over-next-2-years_14938801.html" target="_blank">Nokia to cut up to 10,000 jobs over next 2 years</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:26:01</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> It said in a statement it expects about 600 million euros ($715 million) to 700 million euros of restructuring and associated charges by 2023.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.business-standard.com/article/markets/intellect-design-arena-trades-higher-for-6th-day-stock-hits-record-peak-121031600462_1.html" target="_blank">Intellect Design Arena trades higher for 6th day; stock hits record peak</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:26:00</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>In the past two months, the stock has zoomed 81 per cent as compared to a 3 per cent gain in the S&amp;P BSE Sensex</b></p><br>
+      <p><b>BusinessStandard</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/ipo-issues-open/subscribe-to-laxmi-organic-industries-ajcon-global_14938781.html" target="_blank">Subscribe to Laxmi Organic Industries: Ajcon Global</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:24:43</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Ajcon Global has come out with its report on Laxmi Organic Industries. The research firm has recommended to #39;#39;Subscribe#39;#39; the ipo in its research report as on March 15, 2021.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://economictimes.indiatimes.com/markets/stocks/news/stock-market-update-nifty-psu-bank-index-falls-over-1-bank-of-maharashtra-dives-4/articleshow/81528034.cms" target="_blank">Stock market update: Nifty PSU Bank index falls over 1%; Bank of Maharashtra dives 4%</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:21:38</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>The index was trading 1.4 per cent down at 2283.3.</b></p><br>
+      <p><b>EconomicTimes</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/business/strategic-divestment-anurag-thakur-allays-concernslossjob-pfother-benefits_14938761.html" target="_blank">Strategic divestment: Anurag Thakur allays concerns on loss of job, PF and other benefits</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:20:53</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> On concerns with regards to jobs losses in Indiaâs largest insurer LIC, MoS Anurag Thakur noted that LIC is not being privatised, but has only planned an initial public offering (IPO)</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://economictimes.indiatimes.com/markets/stocks/news/clsa-picks-3-large-cap-bank-stocks/articleshow/81527648.cms" target="_blank">CLSA raises bets on 3 largecap banks</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:19:08</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>CLSA said its analysis on what&#39;s priced in indicates that the current share prices imply long term return on equity of 13.5-14% for ICICI Bank and Axis bank. The same is 10% for SBI.</b></p><br>
+      <p><b>EconomicTimes</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/ipo-issues-open/kalyan-jewellers-ipo-day-1-issue-witnesses-32-subscription-retail-portion-booked-61_14938741.html" target="_blank">Kalyan Jewellers IPO day 1: Issue witnesses 32% subscription, retail portion booked 61%</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:16:49</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> KR Choksey gives a subscribe rating to the issue as it anticipate listing gains looking at the growth potential in the company.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://www.moneycontrol.com/news/ipo-issues-open/kalyan-jewellers-ipo-day-1-issue-witnesses-23-subscription-retail-portion-booked-44_14938741.html" target="_blank">Kalyan Jewellers IPO day 1: Issue witnesses 23% subscription, retail portion booked 44%</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:16:49</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> KR Choksey gives a subscribe rating to the issue as it anticipate listing gains looking at the growth potential in the company.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://economictimes.indiatimes.com/markets/stocks/news/godrej-properties-raises-rs-3750-crore-through-qip/articleshow/81527743.cms" target="_blank">Godrej Properties raises Rs 3,750 crore through QIP</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:16:17</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>Goldman Sachs Funds, Government of Singapore, Invesco Oppenheimer Developing Markets Fund and Monetary Authority of Singapore among key investors</b></p><br>
+      <p><b>EconomicTimes</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://economictimes.indiatimes.com/markets/stocks/news/stock-market-update-fmcg-stocks-advance-itc-rises-1/articleshow/81527826.cms" target="_blank">Stock market update: FMCG stocks advance; ITC rises 1%</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:14:33</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>The Nifty FMCG index was trading 0.5 per cent up at 33222.9.</b></p><br>
+      <p><b>EconomicTimes</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/real-estate/bollywood-singer-alka-yagnik-buys-propertymumbai-worth-rs-5-crore_14938681.html" target="_blank">Bollywood singer Alka Yagnik buys property in Mumbai worth Rs 5 crore</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:09:56</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> The singer has bought the house along with her daughter Saysha Kapoor, paying a stamp duty of Rs 10 lakh.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      
+      <h2><a href="https://timesofindia.indiatimes.com/business/india-business/government-rbi-share-similar-policy-stand-on-cryptocurrency/articleshow/81527638.cms" target="_blank">Govt, RBI share similar policy stand on cryptocurrency</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:09:55</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>The government and the Reserve Bank of India (RBI) have a similar stand on cryptocurrency, whose fate in the country will be decided by the bill proposed to be tabled during the current session of Parliament.</b></p><br>
+      <p><b>TimesofIndia</p>
+    </div>
+ </div>
+ 
+   <div class="rightcolumn">
+    <div class="card">
+    
+      <h2><a href="https://www.moneycontrol.com/news/current-affairs/indian-railways-will-never-be-privatised-piyush-goyallok-sabha_14938721.html" target="_blank">Indian Railways will never be privatised: Piyush Goyal in Lok Sabha</a></h2>
+      <h5>Published Date:  &nbsp&nbsp2021-03-16   13:09:31</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b> Replying to a discussion on Demands for Grants for Railways, Goyal said there has been no death of any passenger due to a rail accident in two years and the railways has been putting enormous focus on passenger safety.</b></p><br>
+      <p><b>MoneyControl-Latest-News</p>
+    </div>
+ </div>
+</div>
+
+</div>
+<!--
+<div class="footer">    
+  <h2>Powered By Rablion Softwares</h2>
+</div>-->
+
+</body>
+<script>
+
+function clickhandle(name){
+var ele=document.getElementById("content");
+let xmlhttp= window.XMLHttpRequest ?
+        new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200)
+            
+            ele.innerHTML=this.responseText;
+    }
+
+    xmlhttp.open("GET","/"+name, true);
+
+    xmlhttp.send();
+return false;
+} 
+ 
+</script>
+</html>
+	

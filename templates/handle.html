@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>
+HANDLING DATA
+</title>
+<style>
+
+.leftcolumn {   
+  float: left;
+  width: 49%;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   width: 75%;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+{% for item in result %}    
+    <div class="card">
+      <h2><a href="{{item[3]}}" target="_blank">{{item[1]}}</a></h2>
+      <h5>Published Date: &nbsp&nbsp{{item[4]}}</h5>
+      <p><b><u>Description:</u></b></p>
+      <p><b>{{item[2]}}</b></p><br>
+      <p><b>{{item[0]}}</p>
+    </div>    
+{% endfor %}    
+    
+</body>
+</html>
+
+
